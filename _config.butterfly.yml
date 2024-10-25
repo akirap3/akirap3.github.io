@@ -1,0 +1,265 @@
+#導航菜單
+menu:
+  首頁: / || fas fa-home
+  分類: /categories/ || fas fa-folder-open
+  歸檔: /archives/ || fas fa-archive
+  關於: /about/ || fas fa-heart
+
+#代碼高亮主題
+highlight_theme: mac
+#代碼複製
+hightlight_copy: true
+
+#默認的 top_img，當頁面的 top_img 沒有配置時，會顯示 default_top_img
+default_top_img: https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80
+
+#主頁的 top_img
+index_img: https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+
+#歸檔頁面的 top_img
+archive_img: https://images.unsplash.com/photo-1477005264461-b0e201668d92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
+
+#tag 子頁面 的 默認 top_img
+tag_img: https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1494&q=80
+
+# category 子頁面 的 默認 top_img
+category_img: https://images.unsplash.com/photo-1522124624696-7ea32eb9592c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80
+
+#社交圖標
+social:
+  fab fa-github: https://github.com/akirap3 || Github
+  fas fa-envelope: mailto:akirap3@gmail.com || Email
+  fab fa-linkedin: https://www.linkedin.com/in/ming-hung-fan/ || LinkedIn
+
+#版權顯示
+copyright: true
+copyright_author: Peter Fan
+copyright_author_href: https://github.com/akirap3
+
+#Table of content
+toc:
+  post: true
+  page: false
+  number: true
+  expand: true
+  style_simple: true
+
+#文章錨點
+anchor: true
+
+#文章分頁按鈕
+# 1: The 'next post' will link to old post
+# 2: The 'next post' will link to new post
+# false: disable pagination
+post_pagination: 2
+
+#圖片描述
+#可開啟圖片Figcaption描述文字顯示
+#優先顯示圖片的 title 屬性，然後是 alt 屬性
+photofigcaption: true
+
+#閱讀模式
+readmode: true
+
+#相關文章推薦
+related_post:
+  enable: true
+  limit: 6 # 顯示推薦文章數目
+  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+
+#頭像
+avatar:
+  img: ./img/cloud.jpeg
+  effect: none
+
+#複製相關配置
+copy:
+  enable: true
+  copyright:
+    enable: false
+
+#Footer 設置
+footer:
+  owner:
+    enable: true
+    since: 2022
+
+#夜間模式
+darkmode:
+  enable: true
+  # dark mode和 light mode切換按鈕
+  button: true
+  autoChangeMode: false
+
+#側邊欄設置
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true # 手機頁面（ 顯示寬度 < 768px ）是否顯示aside內容
+  position: right # left or right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description:
+    button:
+      enable: true
+      icon: fab fa-github
+      text: 追蹤
+      link: https://github.com/akirap3
+  card_announcement:
+    enable: false
+    content: Welcome to itcosmos
+  card_recent_post:
+    enable: true
+    limit: 3 # if set 0 will show all
+    sort: date # date or updated
+  card_categories:
+    enable: true
+    limit: 10 # if set 0 will show all
+    expand: none # none/true/false
+  card_tags:
+    enable: true
+    limit: 20 # if set 0 will show all
+    color: true
+  card_archives:
+    enable: true
+    type: monthly # yearly or monthly
+    format: YYYY 年 MM 月 # eg: YYYY年MM月
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+    limit: 8 # if set 0 will show all
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: false
+
+#訪問人數 busuanzi (UV 和 PV)
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+#運行時間
+runtimeshow:
+  enable: true
+  publish_date: 8/7/2022 18:00:00
+  ##網頁開通時間
+  #格式: 月/日/年 時間
+  #也可以寫成 年/月/日 時間
+
+#Note (Bootstrap Callout)
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: flat
+  icons: false
+  border_radius: 3
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
+
+# mermaid
+# see https://github.com/mermaid-js/mermaid
+mermaid:
+  enable: true
+  # built-in themes: default/forest/dark/neutral
+  theme:
+    light: default
+    dark: dark
+
+#頁面及文章的meta顯示
+post_meta:
+  page:
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_format: relative # date/relative 顯示日期還是相對日期
+    categories: true # true or false 主頁是否顯示分類
+    tags: true # true or false 主頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
+  post:
+    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
+    date_format: relative # date/relative 顯示日期還是相對日期
+    categories: true # true or false 文章頁是否顯示分類
+    tags: true # true or false 文章頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
+
+#分享
+sharejs:
+  enable: true
+  sites: facebook,twitter,linkedin #想要顯示的內容
+
+#搜尋系統
+local_search:
+  enable: true
+  preload: false
+  CDN:
+
+#分析統計
+google_analytics: UA-188475041-1
+
+# 美化頁面顯示
+beautify:
+  enable: true
+  field: site # site/post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: '#F47466'
+
+# 主頁subtitle
+subtitle:
+  enable: true
+  # Typewriter Effect (打字效果)
+  effect: true
+  # loop (循環打字)
+  loop: true
+  # source 調用第三方服務
+  # source: false 關閉調用
+  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # source: 2  調用一句網（簡體） http://yijuzhan.com/
+  # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
+  # subtitle 會先顯示 source , 再顯示 sub 的內容
+  source: false
+  # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
+  sub:
+    - Stay Hungry&#44; Stay Foolish.
+    - It’s fine to celebrate success but it is more important to heed the lessons of failure.
+
+#字數統計
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+#圖片大圖查看模式
+fancybox: true
+
+# Snackbar 彈窗
+# https://github.com/polonel/SnackBar
+# position 彈窗位置
+# 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
+snackbar:
+  enable: true
+  position: bottom-center
+  bg_light: '#49b1f5' #light mode時彈窗背景
+  bg_dark: '#2d3035' #dark mode時彈窗背景
+
+#CSS 前綴
+css_prefix: true
+
+#在 head 裏增加一些 meta 資料，例如縮略圖、標題、時間等等。當你分享網頁到一些平台時，平台會讀取 Open Graph 的內容，展示縮略圖，標題等等信息。
+Open_Graph_meta: true
+
+# https://instant.page/
+# prefetch (預加載)
+instantpage: true
+
+# https://github.com/vinta/pangu.js
+# Insert a space between Chinese character and English character (中英文之間添加空格)
+pangu:
+  enable: false
+  field: post # site/post
